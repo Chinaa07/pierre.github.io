@@ -1,0 +1,451 @@
+
+body{
+    background-image: url(https://i.pinimg.com/474x/76/e8/d2/76e8d27e5dd7211b334a11a344d1dda8.jpg);
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #660303;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #7e0909;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #fcf9f9;
+    border: 1px solid #ddd;
+    border-radius:20px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+
+    /* NUEVAS LÍNEAS PARA LIMITAR LARGO Y PERMITIR CONTENIDO ABAJO */
+  max-height: 440px;       /* Limita la altura total */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+
+.card img {
+    max-width: 60.5%;
+    border-radius: 0px;
+
+     /* NUEVAS LÍNEAS PARA CENTRAR LA IMAGEN */
+     display: block;
+     margin: 0 auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px #970808
+}
+
+.ver-mas {
+    background-color: #610a0a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ver-mas:hover {
+    background-color: #0c0909;
+}
+
+.details {
+    margin-top: 10px;
+    text-align: left;
+    display: none; /* Ocultar detalles por defecto */
+}
+
+.ubicacion, .horarios, .reservas, .contacto, .galeria, .testimonios {
+    background: #fff;
+    margin: 190px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(131, 3, 3, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 5;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #850a0a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.titulo {
+    font-family: 'Lobster', cursive; /* Fuente personalizada */
+    font-size: 2.5em; /* Tamaño de la fuente */
+    margin: 0; /* Eliminar márgenes */
+}
+
+nav {
+    margin-top: 10px; /* Espaciado superior del menú */
+}
+
+.menu {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+    text-align: center; /* Centrar el menú */
+}
+
+.menu > li {
+    display: inline-block; /* Mostrar elementos en línea */
+    position: relative; /* Posición relativa para el submenu */
+    margin: 0 15px; /* Espaciado entre elementos */
+}
+
+.menu a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px 15px; /* Espaciado interno */
+    display: block; /* Hacer que el área del enlace sea más grande */
+}
+
+.menu a:hover {
+    background: #130505; /* Cambiar el fondo al pasar el mouse */
+}
+
+.submenu {
+    display: none; /* Ocultar el submenu por defecto */
+    position: absolute; /* Posicionar el submenu */
+    background: #880606; /* Fondo del submenu */
+    padding: 10px 0; /* Espaciado interno */
+    list-style-type: none; /* Eliminar viñetas */
+    margin: 0; /* Eliminar márgenes */
+    z-index: 1000; /* Asegurarse de que el submenu esté por encima de otros elementos */
+}
+
+.submenu li {
+    width: 150px; /* Ancho del submenu */
+}
+
+.menu li:hover .submenu {
+    display: block; /* Mostrar el submenu al pasar el mouse */
+}
+
+.submenu a {
+    color: #fff; /* Color del texto del submenu */
+    padding: 10px 15px; /* Espaciado interno */
+}
+
+.submenu a:hover {
+    background: #0e0404; /* Cambiar el fondo al pasar el mouse en el submenu */
+}
+
+footer {
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 50px 0; /* Espaciado interno */
+    background: #333; /* Fondo del pie de página */
+    color: #fff; /* Color del texto */
+    position: relative; /* Posición relativa */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+
+.reservas, .contacto {
+    background: #fff; /* Fondo blanco */
+    margin: 450px; /* Margen alrededor de la sección */
+    padding: 100px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h2 {
+    color: #333; /* Color del encabezado */
+}
+
+form {
+    display: flex; /* Usar flexbox para el formulario */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+label {
+    margin-top: 10px; /* Espaciado superior para las etiquetas */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+}
+
+input[type="submit"] {
+    background-color: #08160c; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 15px; /* Espaciado superior */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+input[type="submit"]:hover {
+    background-color: #080505; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+.contacto ul {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 100px; /* Eliminar padding */
+}
+
+.contacto a {
+    color: #5e0b0b; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.contacto a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.contacto p {
+    margin: 5px 0; /* Espaciado vertical para los párrafos */
+
+}
+
+.boton {
+    padding: 8px 10px;
+    font-size: 15px;
+    background-color: #8d1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  #otro-boton {
+    margin-top: 600px; /* para simular distancia */
+  }
+
+
+
+
+
+
+
+
+
+
+
+ 
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #fffbe6; /* Fondo beige claro */
+    }
+    
+    /* Contenedor de las imágenes del carrusel */
+    .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+    width: 300%; /* Tres imágenes en total, cada una ocupa 100% del contenedor */
+    }
+    
+    /* Estilos de las imágenes del carrusel */
+    .carousel-images img {
+    width: 33.33%; /* Cada imagen ocupa el 33.33% del ancho total */
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    }
+    
+    /* Botones de navegación */
+    .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    }
+    
+    /* Botón izquierdo */
+    .carousel-button.prev {
+    left: 10px;
+    }
+    
+    /* Botón derecho */
+    .carousel-button.next {
+    right: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+/* Botones de navegación */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 50%; /* Forma redonda */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efecto hover para los botones */
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Botón derecho */
+.carousel-button.next {
+    right: 10px;
+}
+
+/* Botón izquierdo */
+.carousel-button.prev {
+    left: 10px;
+}
+/* Estilo general para el contenedor de la imagen */
+.image-container {
+    text-align: center; /* Centra el contenido */
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para la imagen */
+.image-container img {
+    width: 100%; /* Hace que la imagen sea responsiva */
+    max-width: 300px; /* Limita el ancho máximo de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+/* Efecto hover para la imagen */
+.image-container img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+}
+
+
+  
+    
+      
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;         /* Centrado vertical */
+    justify-content: space-between;
+    padding: 10px 20px;          /* Espacio alrededor */
+    font-family: sans-serif;
+  }
+
+  .logo {
+    height: 165px;
+    width: auto;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
